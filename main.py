@@ -1,48 +1,36 @@
 from tkinter import *
 
 window = Tk()
-window.title("This is new window")
-window.minsize(width=500, height=500)
-
-my_label = Label(text="This is my label", font=("Arial", 24, "bold"))
-# my_label.pack(side="left")
-my_label.grid(row=0,column=0)
-
-
-def button_clicked():
-    my_label.config(text=entry.get())
-entry = Entry(width=10)
-entry.grid(row=1,column=1)
-button_2 = Button(text="this is button 2")
-button_2.grid(row=0, column=2)
-
-button = Button(text="Click me", command=button_clicked)
-button.grid(columnspan=2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.title("Mile to Km Converter")
+# window.minsize(width=500, height=300)
+# window.config(padx=50, pady=50)
+#
+# def calculation():
+#     mile = miles_input.get()
+#     kilometer = float(mile) * 1.60934
+#     kilometer_result_label.config(text=kilometer )
+#
+# miles_input = Entry(width=10)
+# miles_input.grid(row=0, column=2)
+#
+# miles_label = Label(text="Miles" , font=("Arial", 14, "bold"))
+# miles_label.grid(row=0,column=3)
+# miles_label.config(padx=10, pady=10)
+#
+# is_equal_fo_label = Label(text="is equal to" , font=("Arial", 14, "bold"))
+# is_equal_fo_label.grid(row=2,column=0)
+# is_equal_fo_label.config(padx=10, pady=10)
+#
+# kilometer_result_label = Label(text=0, font=("Arial", 14, "bold"))
+# kilometer_result_label.grid(row=2,column=2)
+# kilometer_result_label.grid(padx=10, pady=10)
+#
+# km_label = Label(text="Km" , font=("Arial", 14, "bold"))
+# km_label.grid(row=2,column=3)
+# km_label.config(padx=10, pady=10)
+#
+# calculate_button = Button(text="Calculate", command=calculation)
+# calculate_button.grid(row=3, column=2)
 
 
 window.mainloop()
